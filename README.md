@@ -6,6 +6,7 @@ Spams the entire be more script to someone
 
 ```
 git glone https://github.com/alide123321/Whatsapp-bee-movie-spam.git
+
 pip install selenium
 ```
 
