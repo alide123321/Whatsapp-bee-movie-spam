@@ -5,7 +5,7 @@ Spams the entire be more script to someone
 ## Instalation
 
 ```
-git glone https://github.com/alide123321/Whatsapp-bee-movie-spam.git
+git clone https://github.com/alide123321/Whatsapp-bee-movie-spam.git
 
 pip install selenium
 ```
