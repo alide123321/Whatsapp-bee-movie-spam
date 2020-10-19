@@ -26,4 +26,5 @@ except:  # if error happens
 for x in f:
     textbox.send_keys(x + "\n")  # prints eatch line in f
 
-textbox.send_keys("Sry bud")  # says sorry after it finishs the entire script
+textbox.send_keys("Sry bud\n")  # says sorry after it finishs the entire script
+sys.exit()
