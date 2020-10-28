@@ -7,12 +7,12 @@ Spams the entire be more script to someone
 ```
 git glone https://github.com/alide123321/Whatsapp-bee-movie-spam.git
 
-pip install selenium
+pip3 install -r requirements.txt
 ```
 
 ## Usage
 
-run main.py program. Once the program starts you have 15 seconds to scan the qr code and click on the user you want to spam
+run main.py program. Once the program starts you have 10 seconds to scan the qr code and click on the user you want to spam
 
 QR code:
 

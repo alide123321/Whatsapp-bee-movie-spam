@@ -4,14 +4,18 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 import sys
+from tqdm import tqdm
 
 
-f = open("bee movie script.txt", "r")  # loads the movie script in f
+# loads the movie script in f
+lines = open("bee movie script.txt", "r").readlines()
 
 browser = webdriver.Chrome()  # starts the chromedriver.exe
 browser.get(('https://web.whatsapp.com/'))  # sets link and opens chrome
 
-time.sleep(15)
+
+time.sleep(10)
+
 
 try:
     textbox = browser.find_element_by_xpath(
@@ -23,8 +27,11 @@ except:  # if error happens
     sys.exit()
 
 
-for x in f:
-    textbox.send_keys(x + "\n")  # prints eatch line in f
+for x in tqdm(range(len(lines))):
+    textbox.send_keys(lines[x] + "\n")  # prints eatch line in f
 
-textbox.send_keys("Sry bud\n")  # says sorry after it finishs the entire script
+
+# says sorry after it finishs the entire script
+textbox.send_keys("Sry bud\n")
+f.close()
 sys.exit()
