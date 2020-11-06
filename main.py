@@ -33,5 +33,5 @@ for x in tqdm(range(len(lines))):
 
 # says sorry after it finishs the entire script
 textbox.send_keys("Sry bud\n")
-f.close()
+lines.close()
 sys.exit()
